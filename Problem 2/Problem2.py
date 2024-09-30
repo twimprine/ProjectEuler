@@ -1,6 +1,6 @@
 result = 0
 counter = 0
-endNumber = 10
+endNumber = 4000000
 
 fibA = 1
 fibB = 1
@@ -15,7 +15,7 @@ def nextFib():
     fibB = nextFib  # Update fibB to the next Fibonacci value
     return fibB
 
-while counter < endNumber:
+while fibB < endNumber:
     newFib = nextFib()
     print('FibA: ', fibA)
     print('FibB: ', fibB)
